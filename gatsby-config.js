@@ -3,5 +3,8 @@ module.exports = {
     title: `new`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-postcss"]
+  plugins: [
+    "gatsby-plugin-postcss",
+    "gatsby-plugin-netlify"
+  ]
 };
