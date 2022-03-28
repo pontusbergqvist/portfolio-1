@@ -1,6 +1,6 @@
 import React from 'react';
+import VerticalLine from './VerticalLine';
 
-// 1400px
 const BlogPosts = () => {
   return (
     <div className='max-w-[1400px] mx-auto px-3 text-center'>
@@ -21,6 +21,7 @@ const BlogPosts = () => {
             </div>
           </div>
           <img src="https://images.unsplash.com/photo-1648138754675-b9918364e325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
+          <VerticalLine scroll={false} length="800px" right="8rem" placeTrianglesFurtherDown={true} />
         </article>
         <article className='w-3/5 border text-left border-primary odd:self-end z-10 bg-slate-100 shadow-2xl my-5 mt-[-200px]'>
           <div className='p-5'>

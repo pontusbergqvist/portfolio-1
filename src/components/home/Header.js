@@ -1,4 +1,5 @@
 import React from 'react';
+import VerticalLine from './VerticalLine';
 
 const Header = () => {
   return (
@@ -16,6 +17,7 @@ const Header = () => {
           <div className='min-h-[435px] h-[435px] w-[435px] min-w-[435px] border-2 border-gray-700 rounded-full absolute top-[15vh] left-[60%]'></div>
         </header>
       </div>
+      <VerticalLine scroll={true} left="4rem" bottom="0" length="400px" />
     </div>
   )
 }
