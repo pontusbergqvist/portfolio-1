@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Bergqvist.io`,
+    siteUrl: `https://bergqvist.io`
   },
   plugins: [
     "gatsby-plugin-postcss",
-    "gatsby-plugin-netlify"
+    "gatsby-plugin-netlify",
   ]
 };

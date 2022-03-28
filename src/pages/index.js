@@ -1,13 +1,15 @@
 import * as React from "react"
 import Layout from '../components/layout/Layout'
-import { FaBeer } from 'react-icons/fa'
+import Header from '../components/home/Header';
+import Experience from '../components/home/Experience';
+import BlogPosts from '../components/home/BlogPosts';
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <div className="text-center text-primary">
-        <p className="underline text-headingSecondary font-dankMono">nu funkar det <FaBeer className="inline" /></p>
-      </div>
+    <Layout title="Home" current="home">
+      <Header />
+      <Experience />
+      <BlogPosts />
     </Layout>
   )
 }

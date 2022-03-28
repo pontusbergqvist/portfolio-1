@@ -7,7 +7,7 @@ const Footer = () => {
       <p className='font-verdana'>Get in touch..</p>
       <p className='text-headingSecondary'>email: pontus@bergqvist.io</p>
       <p className='text-headingSecondary'>github: pontusbergqvist</p>
-      <div className='flex items-center text-headingSecondary'><p className='mr-3'>//</p><FaLinkedin className='mr-3 cursor-pointer hover:text-[#4875B4]' /> <FaTwitter className='cursor-pointer hover:text-[#33CCFF]' /></div>
+      <div className='flex items-center text-headingSecondary'><p className='mr-3'>&#47;&#47;</p><FaLinkedin className='mr-3 cursor-pointer hover:text-[#4875B4]' /> <FaTwitter className='cursor-pointer hover:text-[#33CCFF]' /></div>
     </footer>
   )
 }

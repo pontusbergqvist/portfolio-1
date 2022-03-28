@@ -1,14 +1,21 @@
 import React from 'react';
-// import { Helmet } from 'react-helmet';
 import Nav from './Nav'
 import Footer from './Footer'
 
-const Layout = ({ children, title, current }) => {
+const Layout = ({ children, title, current, }) => {
+  //   const data = useStaticQuery(graphql`
+  //   query {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
+
   return (
     <>
-      {/* <Helmet>
-        <title>{title} | Bergqvist.io</title>
-      </Helmet> */}
+      {/* <title>{title} | {data.site.siteMetadata.title}</title> */}
       <div className='max-w-[1920px] mx-auto bg-slate-100'>
         <Nav current={current} />
         {children}
