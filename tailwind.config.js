@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#343434',
+        secondary: '#fff'
       },
       fontSize: {
         heading: '80px',
