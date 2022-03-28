@@ -1,5 +1,4 @@
 import React from 'react';
-import VerticalLine from './VerticalLine';
 
 const BlogPosts = () => {
   return (
@@ -21,7 +20,13 @@ const BlogPosts = () => {
             </div>
           </div>
           <img src="https://images.unsplash.com/photo-1648138754675-b9918364e325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
-          <VerticalLine scroll={false} length="800px" right="8rem" placeTrianglesFurtherDown={true} />
+          <div className={`absolute right-32 leading-[.7]`}>
+            <div className={`h-[800px] w-[1px] bg-primary flex flex-col items-center justify-end`}>
+              <span className='text-red-800'>▽</span>
+              <span className='text-red-800'>▽</span>
+              <span className='text-red-800 mb-[100px]'>▽</span>
+            </div>
+          </div>
         </article>
         <article className='w-3/5 border text-left border-primary odd:self-end z-10 bg-slate-100 shadow-2xl my-5 mt-[-200px]'>
           <div className='p-5'>
