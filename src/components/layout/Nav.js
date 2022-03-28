@@ -1,5 +1,5 @@
 import React from 'react';
-import DarkmodeButton from './DarkModeButton';
+import DarkmodeButton from './DarkmodeButton';
 import { Link } from 'gatsby'
 import { BsFillGearFill } from 'react-icons/bs'
 
