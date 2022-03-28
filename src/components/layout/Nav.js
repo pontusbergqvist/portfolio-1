@@ -4,11 +4,12 @@ import { Link } from 'gatsby'
 import { BsFillGearFill } from 'react-icons/bs'
 
 const Nav = ({ current }) => {
+  // <Link to="/work">work</Link>
   return (
     <nav className='flex justify-center items-center font-dankMono h-[70px] relative'>
       <ul className='flex flex-row justify-between max-w-[400px] w-[100%]'>
         <li className={`${current === 'home' ? 'underline underline-offset-2' : ''} mx-2 p-2`}><Link to="/">home</Link></li>
-        <li className={`${current === 'work' ? 'underline underline-offset-2' : ''} mx-2 p-2`}><Link to="/work">work</Link></li>
+        <li className={`${current === 'work' ? 'underline underline-offset-2' : ''} mx-2 p-2`}>work</li>
         <li className={`${current === 'blog' ? 'underline underline-offset-2' : ''} mx-2 p-2`}>blog</li>
         <li className={`mx-2 p-2`}>@contact</li>
       </ul>
