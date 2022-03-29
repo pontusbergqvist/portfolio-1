@@ -1,11 +1,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         primary: '#343434',
         secondary: '#fff',
-        link: '#0000EE'
+        link: '#0000EE',
+        darkBg: '#1e293b',
+        darkText: '#fff'
       },
       fontSize: {
         heading: '80px',

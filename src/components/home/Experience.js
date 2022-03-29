@@ -2,10 +2,10 @@ import React from 'react';
 
 const Experience = () => {
   return (
-    <article className='max-w-[1364px] px-5 mx-auto text-primary'>
+    <article className='max-w-[1364px] px-5 mx-auto text-primary dark:text-darkText'>
       <div className='flex items-center'>
         <h2 className='font-plexSerif text-heading'>Experience</h2>
-        <span className='h-[2px] ml-5 mt-3 w-full bg-primary block'></span>
+        <span className='h-[2px] ml-5 mt-3 w-full bg-primary dark:bg-darkText block'></span>
       </div>
       <div className='max-w-[1090px] mx-auto flex justify-between mt-5'>
         <section className='w-1/2'>

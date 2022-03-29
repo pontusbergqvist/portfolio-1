@@ -20,3 +20,13 @@
   font-weight: 400;
   src: url("../fonts/IBMPlexSerif-Regular.ttf") format("ttf");
 }
+
+
+.text-outline {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #343434;
+}
+
+body.dark .text-outline {
+  -webkit-text-stroke: 1px #fff;
+}

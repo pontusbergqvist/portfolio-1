@@ -18,7 +18,7 @@ const Layout = ({ children, title, current, }) => {
   return (
     <>
       <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      <div className='max-w-[1920px] mx-auto bg-slate-100'>
+      <div className='max-w-[1920px] mx-auto bg-slate-100 dark:bg-darkBg dark:text-darkText'>
         <Nav current={current} />
         {children}
         <Footer />

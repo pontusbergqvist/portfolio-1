@@ -14,7 +14,7 @@ const Nav = ({ current }) => {
       </ul>
       <div className='absolute right-0 flex items-center mr-5'>
         <DarkmodeButton />
-        <BsFillGearFill className='ml-3 cursor-pointer text-primary' />
+        <BsFillGearFill className='ml-3 cursor-pointer text-primary dark:text-darkText transition-transform ' />
       </div>
     </nav >
   )
