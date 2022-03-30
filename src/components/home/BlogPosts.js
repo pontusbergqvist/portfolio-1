@@ -1,5 +1,6 @@
 import React from 'react';
 import Tags from '../Tags';
+import Button from '../Button';
 import '../../styles/global.css'
 
 const BlogPosts = () => {
@@ -36,7 +37,7 @@ const BlogPosts = () => {
           <img src="https://images.unsplash.com/photo-1648138754675-b9918364e325?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" />
         </article>
       </div>
-      <button className='border-2 font-dankMono border-primary dark:text-darkText dark:border-darkText p-3 rounded-full mt-20 mx-auto hover:underline'>See all posts</button>
+      <Button>See all posts</Button>
     </div>
   )
 }

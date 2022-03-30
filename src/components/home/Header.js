@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
               <p className='inline-block relative font-dankMono text-heading after:content-[""] after:h-1/3 after:w-full after:bg-red-400 after:block after:absolute after:bottom-0 after:right-0 z-10 after:translate-y-[-50%] after:-z-10 after:skew-x-3 after:drop-shadow-md'>Bergqvist</p>
             </div>
             <p className='w-[80%] my-4'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nemo error aut consectetur unde repellendus architecto ipsum minima natus debitis rerum corporis molestiae quasi ab.</p>
-            <button className='border-2 font-dankMono border-primary dark:border-darkText p-3 rounded-full hover:underline'>View my work</button>
+            <Button to="/work">View my work</Button>
           </div>
           <div className='min-h-[435px] h-[435px] w-[435px] min-w-[435px] border-2 border-gray-700 dark:border-darkText rounded-full absolute top-[15vh] left-[60%]'></div>
         </header>
