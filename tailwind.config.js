@@ -1,10 +1,12 @@
+const { screens } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}",],
   darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        primary: '#343434',
+        primary: '#1e293b',
         secondary: '#fff',
         link: '#0000EE',
         darkBg: '#1e293b',
@@ -20,7 +22,16 @@ module.exports = {
         dankMono: ['Dank Mono', 'sans-serif'],
         plexSerif: ['IBM Plex Serif', 'sans-serif'],
         verdana: ['Verdana', 'sans-serif'],
-      }
+      },
+    },
+    screens: {
+      grande: '1430px',
+      larger: '1230px',
+      large: '960px',
+      medium: '700px',
+      smol: '376px',
+      dontUseGalaxyFeold: '281px',
+      ...screens,
     },
   },
   plugins: [],
