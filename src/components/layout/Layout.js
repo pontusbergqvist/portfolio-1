@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import Nav from './Nav';
+import React, { useState, useEffect, useCallback } from 'react';
+import Nav from './nav/Nav';
 import Footer from './Footer';
-import Overlay from './Overlay';
+import Overlay from './nav/Overlay';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -17,6 +17,8 @@ const Layout = ({ children, title, current, }) => {
     }
   `);
 
+  const setToActive = useCallback(() => setActive(!active), [active])
+
   useEffect(() => {
     if (active) {
       document.body.classList.add('hamburger-overlay-active');
@@ -28,11 +30,13 @@ const Layout = ({ children, title, current, }) => {
   return (
     <>
       <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      <Overlay current={current} active={active} setActive={setActive} />
-      <div className='max-w-[1920px] mx-auto bg-slate-100 dark:bg-darkBg dark:text-darkText dontUseGalaxyFold:px-5 px-1 overflow-hidden'>
-        <Nav current={current} active={active} setActive={setActive} />
-        {children}
-        <Footer />
+      <div className='bg-slate-100 dark:bg-darkBg dark:text-darkText'>
+        <div className='max-w-[1920px] w-full mx-auto dontUseGalaxyFold:px-5 px-1 overflow-hidden'>
+          <Overlay current={current} active={active} setActive={setToActive} />
+          <Nav current={current} active={active} setActive={setActive} />
+          {children}
+          <Footer />
+        </div>
       </div>
     </>
   )

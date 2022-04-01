@@ -6,7 +6,6 @@
   html {
     font-family: Tahoma, sans-serif;
     font-size: 20px;
-    overflow-x: hidden;
   }
 }
 
@@ -63,9 +62,9 @@ body.dark .text-outline {
   transition-delay: 500ms;
 }
 
-body {
-  overflow: scroll;
-}
+/* body {
+  overflow-y: visible;
+} */
 
 .hamburger-overlay-active {
   overflow-y: hidden;
