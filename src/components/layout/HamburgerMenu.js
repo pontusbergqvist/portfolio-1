@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-const HamburgerMenu = ({ setActive }) => {
-  const [open, setOpen] = useState(false);
-
+const HamburgerMenu = ({ active, setActive }) => {
   const baseStyle = {
     strokeWidth: 0.8,
     strokeLinecap: 'butt',
@@ -11,21 +9,16 @@ const HamburgerMenu = ({ setActive }) => {
     fill: 'none',
     strokeDasharray: '10 70'
   };
-  const upperLine = !open ? baseStyle : { ...baseStyle, strokeDasharray: '22 44', strokeDashoffset: -36 }
-  const bottomLine = !open ? { ...baseStyle, strokeDasharray: '11 40' } : { ...baseStyle, strokeDasharray: '0 40', strokeDashoffset: '-5.5' };
-
-  const onClick = () => {
-    setOpen(!open);
-    setActive(open);
-  }
+  const upperLine = !active ? baseStyle : { ...baseStyle, strokeDasharray: '22 44', strokeDashoffset: -36 }
+  const bottomLine = !active ? { ...baseStyle, strokeDasharray: '11 40' } : { ...baseStyle, strokeDasharray: '0 40', strokeDashoffset: '-5.5' };
 
   return (
     <div className='md:hidden cursor-pointer fixed z-40 after:h-[50px] after:w-[60px] after:block after:bg-red-400 skew-x-3'>
       <svg
         width="70"
         height="50"
-        onClick={() => onClick()}
-        className={`svg ${!open ? 'active' : ''} absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] `}
+        onClick={() => setActive(!active)}
+        className={`svg ${!active ? 'active' : ''} absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] `}
         viewBox="0 0 18.520834 13.229167"
         version="1.1"
         id="svg14379">

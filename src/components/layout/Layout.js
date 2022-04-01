@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Nav from './Nav'
-import Footer from './Footer'
+import React, { useState, useEffect } from 'react';
+import Nav from './Nav';
+import Footer from './Footer';
+import Overlay from './Overlay';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -16,12 +17,20 @@ const Layout = ({ children, title, current, }) => {
     }
   `);
 
+  useEffect(() => {
+    if (active) {
+      document.body.classList.add('hamburger-overlay-active');
+    } else {
+      document.body.classList.remove('hamburger-overlay-active');
+    }
+  }, [active])
+
   return (
     <>
       <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      {!active ? <div className='absolute h-screen w-screen bg-red-200 z-20'></div> : ''}
-      <div className='max-w-[1920px] mx-auto bg-slate-100 dark:bg-darkBg dark:text-darkText dontUseGalaxyFeold:px-5'>
-        <Nav current={current} setActive={setActive} />
+      <Overlay current={current} active={active} setActive={setActive} />
+      <div className='max-w-[1920px] mx-auto bg-slate-100 dark:bg-darkBg dark:text-darkText dontUseGalaxyFold:px-5 px-1 overflow-hidden'>
+        <Nav current={current} active={active} setActive={setActive} />
         {children}
         <Footer />
       </div>

@@ -31,6 +31,7 @@ module.exports = {
       medium: '700px',
       smol: '376px',
       dontUseGalaxyFeold: '281px',
+      landscapeMax: { 'raw': '(max-height: 730px)' },
       ...screens,
     },
   },

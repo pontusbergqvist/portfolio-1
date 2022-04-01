@@ -3,7 +3,7 @@ import Button from '../Button';
 
 const Header = () => {
   return (
-    <div className="text-primary dark:text-darkText w-full h-[800px] min-h-[calc(100vh_-_100px)] relative">
+    <div className="text-primary dark:text-darkText w-full landscapeMax:h-[600px] min-h-[calc(100vh_-_100px)] relative px-3">
       <div className='relative h-full'>
         <header className='relative max-w-[960px] mx-auto'>
           <div className='absolute top-[45vh]'>

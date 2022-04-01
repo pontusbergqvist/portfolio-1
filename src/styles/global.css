@@ -61,3 +61,11 @@ body.dark .text-outline {
 .active>.default-animation.delay-last {
   transition-delay: 500ms;
 }
+
+body {
+  overflow: scroll;
+}
+
+.hamburger-overlay-active {
+  overflow-y: hidden;
+}
