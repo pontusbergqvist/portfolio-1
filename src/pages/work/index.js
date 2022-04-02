@@ -5,7 +5,7 @@ import WorkGrid from '../../components/pages/work/WorkGrid';
 
 const WorkPage = () => {
   return (
-    <Layout title="Work" current="work">
+    <Layout title="Work" currentPage="work">
       <Header />
       <WorkGrid />
     </Layout>

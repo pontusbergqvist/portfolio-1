@@ -9,7 +9,7 @@ const BlogPosts = () => {
       <h2 className='md:hidden my-20 px-5 inline-block text-left relative font-dankMono text-heading after:content-[""] after:h-1/3 after:w-full after:bg-red-400 after:block after:absolute after:bottom-0 after:right-0 z-10 after:translate-y-[-50%] after:-z-10 after:skew-x-3 after:drop-shadow-md'>blog</h2>
       <div className='hidden md:block relative text-left text-outline select-none pointer-events-none'>
         <h2 className='text-[300px] tracking-widest'>blog</h2>
-        <span className='hidden grande:block absolute font-plexSerif text-[700px] top-[-50%] right-[400px]'>“</span>
+        <span className='hidden grande:block absolute font-plexSerif text-[700px] top-[-50%] right-[350px]'>“</span>
       </div>
       <div className='flex flex-col mb-20'>
         <article className='relative md:w-3/5 border text-left border-primary items-center md:odd:self-end z-10 dark:border-none bg-slate-100 dark:bg-slate-700 dark:text-darkText shadow-2xl my-5 md:mt-[-200px]'>
