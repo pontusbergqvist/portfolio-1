@@ -1,44 +1,32 @@
 import React, { useState, useEffect, useCallback } from 'react';
+import ContentWrapper from '../providers/layout/ContentWrapper';
+import ThemeWrapper from '../providers/layout/ThemeWrapper';
 import Nav from './nav/Nav';
 import Footer from './Footer';
-import Overlay from './nav/Overlay';
-import { Helmet } from 'react-helmet';
-import { graphql, useStaticQuery } from 'gatsby';
+import HamburgerMenu from './nav/HamburgerMenu';
 
-const Layout = ({ children, title, current, }) => {
+// This wraps the whole page and sets colors and content width
+const Layout = ({ children, currentPage, }) => {
+
+  // Hamburger toggle:
   const [active, setActive] = useState(false);
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   const setToActive = useCallback(() => setActive(!active), [active])
 
   useEffect(() => {
-    if (active) {
-      document.body.classList.add('hamburger-overlay-active');
-    } else {
+    active ?
+      document.body.classList.add('hamburger-overlay-active') :
       document.body.classList.remove('hamburger-overlay-active');
-    }
   }, [active])
 
   return (
-    <>
-      <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      <div className='bg-slate-100 dark:bg-darkBg dark:text-darkText'>
-        <div className='max-w-[1920px] w-full mx-auto dontUseGalaxyFold:px-5 px-1 overflow-hidden'>
-          <Overlay current={current} active={active} setActive={setToActive} />
-          <Nav current={current} active={active} setActive={setActive} />
-          {children}
-          <Footer />
-        </div>
-      </div>
-    </>
+    <ThemeWrapper>
+      <ContentWrapper>
+        <Nav currentPage={currentPage} active={active} setActive={setActive} />
+        {children}
+        <Footer />
+      </ContentWrapper>
+      {active && <HamburgerMenu currentPage={currentPage} active={active} setActive={setToActive} />}
+    </ThemeWrapper>
   )
 }
 

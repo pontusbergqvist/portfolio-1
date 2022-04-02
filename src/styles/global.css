@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    font-family: Tahoma, sans-serif;
-    font-size: 20px;
-  }
-}
-
 @font-face {
   font-family: "Dank Mono";
   font-weight: 400;
@@ -61,10 +54,6 @@ body.dark .text-outline {
 .active>.default-animation.delay-last {
   transition-delay: 500ms;
 }
-
-/* body {
-  overflow-y: visible;
-} */
 
 .hamburger-overlay-active {
   overflow-y: hidden;

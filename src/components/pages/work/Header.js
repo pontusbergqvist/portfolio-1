@@ -1,6 +1,6 @@
 import React from 'react';
-import Tags from '../Tags';
-import Link from '../Link';
+import Tags from '../../shared/Tags';
+import Link from '../../shared/Link';
 
 const Header = () => {
   return (

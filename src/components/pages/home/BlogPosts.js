@@ -1,7 +1,7 @@
 import React from 'react';
-import Tags from '../Tags';
-import Button from '../Button';
-import '../../styles/global.css'
+import Tags from '../../shared/Tags';
+import Button from '../../shared/Button';
+import '../../../styles/global.css'
 
 const BlogPosts = () => {
   return (

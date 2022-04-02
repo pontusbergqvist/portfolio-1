@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from '../../components/layout/Layout'
-import Header from '../../components/work/Header'
-import WorkGrid from '../../components/work/WorkGrid';
+import Header from '../../components/pages/work/Header'
+import WorkGrid from '../../components/pages/work/WorkGrid';
 
 const WorkPage = () => {
   return (

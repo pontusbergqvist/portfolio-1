@@ -21,7 +21,7 @@ module.exports = {
       fontFamily: {
         dankMono: ['Dank Mono', 'sans-serif'],
         plexSerif: ['IBM Plex Serif', 'sans-serif'],
-        verdana: ['Verdana', 'sans-serif'],
+        verdana: ['Verdana', 'Tahoma', 'sans-serif'],
       },
     },
     screens: {
