@@ -1,10 +1,10 @@
 import * as React from "react"
+import MetaWrapper from "../components/providers/MetaWrapper";
 import Layout from '../components/layout/Layout'
 import Header from '../components/pages/home/Header';
-import Experience from '../components/pages/home/Experience';
-import BlogPosts from '../components/pages/home/BlogPosts';
+import Experience from '../components/pages/home/experience/Experience';
+import BlogSection from '../components/pages/home/blog/BlogSection';
 import Work from '../components/pages/home/Work';
-import MetaWrapper from "../components/providers/MetaWrapper";
 
 const IndexPage = () => {
   return (
@@ -13,7 +13,7 @@ const IndexPage = () => {
         <Header />
         <Experience />
         <Work />
-        <BlogPosts />
+        <BlogSection />
       </Layout>
     </MetaWrapper>
   )

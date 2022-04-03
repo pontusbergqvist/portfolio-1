@@ -13,10 +13,10 @@ module.exports = {
         darkText: '#fff'
       },
       fontSize: {
-        heading: '80px',
+        heading: '60px',
         headingSecondary: '40px',
-        headingTertiary: '30px',
-        body: '20px',
+        headingTertiary: '25px',
+        body: '18px',
       },
       fontFamily: {
         dankMono: ['Dank Mono', 'sans-serif'],
@@ -25,6 +25,7 @@ module.exports = {
       },
     },
     screens: {
+      ...screens,
       grande: '1430px',
       larger: '1230px',
       large: '960px',
@@ -32,7 +33,6 @@ module.exports = {
       smol: '376px',
       dontUseGalaxyFeold: '281px',
       landscapeMax: { 'raw': '(max-height: 730px)' },
-      ...screens,
     },
   },
   plugins: [],
