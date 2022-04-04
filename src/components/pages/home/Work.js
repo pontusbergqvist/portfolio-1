@@ -2,10 +2,10 @@ import React from 'react';
 
 const Work = () => {
   return (
-    <div className='max-w-[1400px] mx-auto px-5 my-20 flex flex-col items-center'>
+    <div className='max-w-[1400px] mx-auto px-5 my-40 flex flex-col items-center'>
       <div className='flex items-center w-full my-5'>
         <h2 className='font-dankMono text-headingTertiary'>Featured projects</h2>
-        <span className='h-[1px] ml-4 w-[30px] dark:bg-darkText block'></span>
+        <span className='h-[1px] ml-4 w-[30px] bg-primary dark:bg-darkText block'></span>
       </div>
       <div className='w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 gap-x-16 relative'>
         <img className='shadow-xl cursor-pointer rounded-md' src="https://www.laralee.design/wp-content/uploads/2020/03/blog-20200309-web-design-display-1-aare-paaatterns.png" alt="" />
